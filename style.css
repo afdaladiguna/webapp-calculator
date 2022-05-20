@@ -30,17 +30,16 @@ body {
     cursor: pointer;
     background-color: lightgrey;
 }
-
-.negative {
-    background-color: orange;
+.button:hover {
+    font-weight: bold;
 }
-.operator {
+
+.negative, .operator, .equals {
     background-color: orange;
 }
 
 .double {
     flex-basis: 50%;
-    background-color: orange;
 }
 
 .display {
@@ -52,3 +51,16 @@ body {
     font-size: 2em;
 }
 
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 513px) {
+    .button {
+        padding: 10px;
+    }
+}
